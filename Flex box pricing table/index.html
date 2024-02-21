@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .plan-price{
+        font-weight: bolder;
+        font-size: 2rem;
+
+      }
+      .plan-title{
+        font-weight: bolder;
+       
+      }
+      body {
+        font-family: 'Sono', sans-serif;
+        align-items: center;
+        text-align: center;
+       
+   
+
+      }
+      .pricing-container{
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        height: 50vh;
+        gap: 2rem;
+   
+      }
+      .pricing-plan{
+        flex: 1;
+        text-align: center;
+        max-width: 400px;
+        background-color: rgb(223, 228, 228);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 5px;
+       
+        
+      }
+      .plan-button{
+
+        background-color: orange;
+        border: 0cap;
+        border-radius: 5px;
+        font-weight: bolder;
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0 black;
+      
+      
+      }
+      #logo{
+        margin-top: 40px;
+   
+      }
+      .plan-features{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+        flex-direction: column;
+        height: 100%;
+        
+      }
+      .pricing-plan{
+        max-width: 200px;
+      }
+       
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="logo" src="./assets/images/deriv logo.png">
+
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Plan Básico</div>
+        <div class="plan-price">$9.99/mes</div>
+        <ul class="plan-features">
+          <li>✅ Señales básicas</li>
+          <li>✅ 1 Usuario</li>
+          <li>🚫 No inlcuye Asistencia</li>
+        </ul>
+        <button class="plan-button">Registrarse</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Plan Estándar</div>
+        <div class="plan-price">$19.99/mes</div>
+        <ul class="plan-features">
+          <li>✅ Señales avanzadas</li>
+          <li>✅ 5 Usuarios</li>
+          <li>✅ Soporte Teléfono y Correo </li>
+        </ul>
+        <button class="plan-button">Registrarse</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Plan Premium</div>
+        <div class="plan-price">$49.99/mes</div>
+        <ul class="plan-features">
+          <li>✅ Señales premium</li>
+          <li>✅ 10 Usuarios</li>
+          <li>✅ Soporte 24/7</li>
+        </ul>
+        <button class="plan-button">Registrarse</button>
+      </div>
+    </div>
+  </body>
+</html>
